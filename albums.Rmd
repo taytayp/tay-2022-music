@@ -1,0 +1,90 @@
+---
+title: "Tay's top 25 albums of 2021"
+---
+
+Here is my list of top albums for the year of our lord, 2021, in descending order. I spent the year trying not to think about genres or specific music I liked, and enjoyed the amount of different things I got to hear. If you care about genre names, I spent a lot more time enjoying hardcore, shoegaze, emo, and hyperpop music than ever before. I go into more detail on my top 10 albums, so take a look if you want to learn a little more about my _feelings_. Let me know if you like what I like or hate me <3.
+
+Please check out my songs list too! [somgs](songs.html)
+
+```{r list, echo=FALSE, message=FALSE}
+library(kableExtra)
+albums <- read.csv("album_list.csv")
+lower_albums <- albums[25:11,]
+upper_albums <- albums[10:1,]
+row.names(lower_albums) <- paste0("**", 25:11, "**")
+lower_albums$image <- paste0('![](img/', lower_albums$File.Name, ')')
+lower_albums <- lower_albums[,c(1, 2, 4)]
+colnames(lower_albums) <- c("Album Title", "Artist", NULL)
+knitr::kable(lower_albums, col.names = c("Album Title", "Artist", "")) %>%
+  kable_styling(font_size = 20, position = "left", full_width = TRUE)
+```
+---  
+And now, for the top 10 albums with a little more detail from me.  
+---  
+
+## 10. Low - HEY WHAT
+<center>
+![](img/low.webp)
+</center>  
+After being blown away by their 2018 release _Double Negative_, I anticipated a real knock out from a band that seems to twist in bend as time marches on. _HEY WHAT_'s mixture of loud and quiet spaces and discordance is honed to a piercing edge the duo uses to bring this album together.  
+  
+## 9. Home Is Where - i became birds
+<center>
+![](img/home.webp)
+</center>
+It's short, it's sweet, and I love to hear about presidents getting assassinated. Albums like this continue to prove that the most recent wave of emo is crazy exciting, a ton of fun, and still as emotionally impactful as ever.  
+  
+## 8. serpentwithfeet - Deacon
+<center>
+![](img/serpent.webp)
+</center>
+I am always happy to admit I slept on an album during the year, only to become crazy into it in December. In this case, I even listened to it and let it totally slip away! That's probably a lesson in being ~present~ or whatever. _Deacon_'s tenderness just swept me away, and I regret the time I spent not knowing how wonderful it was.    
+  
+## 7. Porter Robinson - Nurture
+<center>
+![](img/porter.webp)
+</center>
+_Nurture_ takes electronic and pop music to an emotional limit and creates a busy but engaging space for a ton of expression with a charmingly bubblegum sound. Listen if you're in a good mood but still kinda worried about it all (me all the time, whew)!  
+  
+## 6. Fiddlehead - Between The Richness
+<center>
+![](img/fiddlehead.webp)
+</center>
+Other than enjoying albums with a lot of tender emotion and emotion, I also found my way into a lot of fucking bangers this year. While the driving guitars yearn to be played loud, Fiddlehead touch on friendship and loss in order to create a well-rounded album for anyone who likes big guitars and a little bit of big feelings.  
+  
+## 5. Turnstile - GLOW ON
+<center>
+![](img/turnstile.webp)
+</center>
+Putting this album back to back with _Between The Richness_ feels **so** right. Turnstile are born from a more hardcore background, but their pink album cover indicates their desire to switch gears on a few songs whose guitar riffs don't tear me apart. The result is such a well-blended, fun, kick-ass album.  
+  
+## 4. The World Is A Beautiful Place & I Am No Longer Afraid To Die - Illusory Walls
+<center>
+![](img/theworld.webp)
+</center>
+At this point, I am approaching superfan status for this band. After listening for six plus years and seeing them live a few times, I am so intimately acquainted with their catalog. _Illusory Walls_ directly alludes to previous mantras and messages in The World Is's discography, and watching them recall these soaring themes while exploding across a number of 20 minute songs sent chills down my spine. Not many bands can make songs like this, and even fewer can fit them all onto one album.  
+  
+## 3. Floating Points, Pharoah Sanders, London Symphony Orchestra - Promises
+<center>
+![](img/pharoah.webp)
+</center>
+A continuous, floating, ebbing journey of sound. A blend of instruments, the most compelling saxophone I've ever heard, less an album more an experience. Putting on this album transcends most listening experiences, each song feels like something more ancient than it is. These aren't the songs of every day, but of lush forest groves and ancient reeling skies. Another life is lived listening to these songs.  
+  
+## 2. Deafheaven - Infinite Granite
+<center>
+![](img/deafheaven.webp)
+</center>
+A new trend I tried this year was to stay up late on Thursday evenings and listen to an anticipated album right at midnight, as most new music is released on Fridays. While I caught some releases I was pleased with, nothing felt like attending an actual event than listening to Deafheaven's _Infinite Granite_ for that very first time (hat tip to John F. for coming on that journey with me). Previously, Deafheaven's vocals were guttural screams layered over metal and shoegaze riffs creating angry but beautiful songs. Now, with more traditional singing, that beauty is dialed up while the melodies continue to thrash and broil in the midst of these songs. My favorite parts are when that singing bends backward into the more destructive, angry rage of less recent Deafheaven and a switch is flicked. These moments utterly sell the anguish, the emotion of these songs and create another layer of expression.  
+  
+## 1. Parannoul - To See The Next Part Of A Dream
+<center>
+![](img/parannoul.webp)
+</center>
+Listening to this album is a dream. It is just **so** different. To have it simmer up from the web, totally unknown to so many people and then scorch across the web as people discovered how incredible and transcendental it was. Not only that, but Parannoul is just one anonymous person working on the entire thing alone and producing it all by hand. It is an incredible achievement and the result is stupendous. Songs wail and churn, moments diffuse and dissolve into noise and emerge back into melodies like a pod of dolphins flirting with the surface of the water. Guitars and percussion become entangled and separate between chorus and verse. It's such a journey, and such an inspiration that such a work is the product of just one person.  
+
+---
+
+Check out my other list for my top 50 [songs](songs.html) of the year. I have a playlist over there, and it features a ton of songs from the above albums, so spin that if you want to get a taste of the whole year for me.  
+
+Finally, here are all the albums summed up! I like that a lot of the colors match up, isn't that neat?  
+![](img/album_grid.png)

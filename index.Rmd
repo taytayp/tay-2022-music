@@ -1,0 +1,10 @@
+---
+title: "Tay's 20201 Music Selections"
+---
+
+Hi! __I'm Taylor__ and I like to listen to music and talk about it with my friends. I collected the top 25 albums I listened to and the top 50 songs I liked, and ordered them into descending lists. You can read about all the albums [here](albums.html) and the songs [here](songs.html).  
+
+If you'd like to hear the songs in a little playlist, you can check that out here:  
+https://open.spotify.com/playlist/2Ti5qRmZ0XqFVtsON9IvF4?si=CP984PYlRMaLAPn8YGV81g
+
+Thanks for reading and listening! Music is cool!

@@ -1,0 +1,14 @@
+name: "Tay's 20201 Music Selections"
+output:
+  html_document:
+    css: "style.css"
+navbar:
+  title: "Tay's 20201 Music Selections"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Albums"
+      href: albums.html
+    - text: "Songs"
+      href: songs.html
+      

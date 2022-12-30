@@ -1,0 +1,92 @@
+---
+title: "Tay's top 50 songs of 2021"
+---
+
+Don't forget to check out my top albums list! [albumngs](albums.html)
+
+```{r list, echo=FALSE, message=FALSE}
+library(kableExtra)
+songs <- read.csv("song_list.csv")
+num_songs <- 50:11
+lower_songs <- songs[num_songs,]
+
+row.names(lower_songs) <- paste0("**", num_songs, "**")
+lower_songs$image <- paste0('![](img/song/', lower_songs$Filename, ')')
+lower_songs <- lower_songs[,c(1, 2, 4)]
+colnames(lower_songs) <- c("Album Title", "Artist", NULL)
+knitr::kable(lower_songs, col.names = c("Song Title", "Artist", "")) %>%
+  kable_styling(font_size = 20, position = "left", full_width = TRUE)
+```
+---
+Let's talk about the top 10 songs in greater detail!
+---
+
+## 10. grandee, blackwinterwells - stranded
+<center>
+![](img/song/stranded.webp)
+</center>  
+If I had less humility I would put this song at number one. It is one of my favorite things to sit around and listen to this song and visualize the strangest things. The song's energy and glitchy beat just feels like the most powerful music, it fills me with joy and strength. Hyperpop is so good. 
+  
+## 9. The War On Drugs - I Don't Live Here Anymore
+<center>
+![](img/song/livehere.webp)
+</center>  
+For the longest time I thought The War on Drugs was just dadcore dressed up for the 21st century that I simply enjoyed listening to anyways (it is okay I think dadcore is pretty fun). Songs like this show that I was wrong and I'm not mad! Lucius on the bridge really brings this song up to an 11, more an anthem than any The War On Drugs song I've heard before.  
+  
+## 8. Big Thief - Little Things
+<center>
+![](img/song/little.webp)
+</center>  
+This song feels like a sea change for Big Thief. Notorious for winding deep, intricate folk songs, "Little Things" brings in a stochastic, busy guitar track that feels to perfectly replicate the busy life of a big city Adrianne worries about. Such a complicated track is a welcome departure for me, and I hope an indicator of their new double LP.  
+  
+## 7. Low - Days Like These
+<center>
+![](img/song/days.webp)
+</center>  
+I'm certainly familiar with the disrupted "duet" Low is fond of, but few of their songs take a sharp turn into the discordant, disrupted but still sonorous vocals. The song is a highlight on an already great album, and features the perfect level of experimentation.
+
+
+## 6. Parannoul - Beautiful World
+<center>
+![](img/song/beautiful.webp)
+</center>  
+It can be challenging to choose songs from albums you love and _not_ select the very first song. Front-loaded bias. It's the first song you hear! No wonder you love it, it announces the start of an experience you love. However! "Beautiful World" is a wonderful lead-in to an album that feels so fresh and new I think it serves as a worthy beacon and great song on its own.
+
+## 5. Animal Collective - Prester John
+<center>
+![](img/song/prester.webp)
+</center>  
+Haunting, industrial sound effects. A building beat. Percussion that swirls into a melody. The droning of vocals. "Prester John" sees all members of Animal Collective contributing to the vocals, and it feels like a real united effort to bring this song together. 
+
+## 4. Deafheaven - Great Mass of Color
+<center>
+![](img/song/great.webp)
+</center>  
+Maybe one of the most palatable Deafheaven songs to ever come out, "Great Mass of Color" showcases the new Deafheaven in perfect form. Bright guitars reflected by dour but pretty vocals. The beauty crescendos into a finisher of pure noise and violence, resolving the song like a knockout finishing a title fight.
+
+## 3. Cassandra Jenkins - Hard Drive
+<center>
+![](img/song/drive.webp)
+</center>  
+Sometimes a hard drive is all you need to work things out. Cassandra Jenkins crafts a beautiful song, with quiet brass and twinkling guitars, overlaid with casual spoken word and singing segments that don't mind where they settle. Breaking into song seems to come at the right moments in the song, the reflections, looking back, being on the road rather than trying to get anywhere. "Take a deep breath / count with me."  
+  
+## 2. The World Is A Beautiful Place & I Am No Longer Afraid To Die - Infinite Josh
+<center>
+![](img/song/josh.webp)
+</center>  
+TWIABP goes to great lengths to build their songs. No stranger to longer pieces, their albums often feature songs that stretch into 10 and 15 minute ranges. "Infinite Josh" borrows from the strategy of the album itself. Namely, alluding to older TWIABP works in both composition and lyrics. These ideas of home, fear, and death have been baked into the band's works, and this song is where they come together conceptually and musically to create a climax for the entire album. 
+
+## 1. Fiddlehead - Grief Motif
+<center>
+![](img/song/grief.webp)
+</center>  
+This song is actually less than ninety seconds long, but I feel in my heart that music should be judged on the feelings it inspires. Obviously, the strength of this song is that it is the prelude to a great album and that expectation bolsters the feeling this song delivers. But on its own merits, "Grief Motif" is a quick banger that delivers a lot of fun and a lot of feeling.
+
+---
+If you haven't already, please peep my [albums list](albums.html). Would you believe many of the songs here are on _those_ albums? I couldn't either! 
+
+Here is a beautiful playlist of these songs in their appropriate, descending order. If you listen I will give you a lil kiss maybe.  
+https://open.spotify.com/playlist/2Ti5qRmZ0XqFVtsON9IvF4?si=CP984PYlRMaLAPn8YGV81g  
+
+Finally, here is the whole list in big image format! I bet it would look nice as your phone background?  
+![](img/song_grid_edited.png)
