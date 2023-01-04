@@ -1,9 +1,10 @@
-name: "Tay's 20201 Music Selections"
+name: "Tay's 2022 Music Selections"
 output:
   html_document:
-    css: "style.css"
+    #css: "style.css"
+    css: "http://code.divshot.com/geo-bootstrap/swatch/bootstrap.css"
 navbar:
-  title: "Tay's 20201 Music Selections"
+  title: "Tay's 2022 Music Selections"
   left:
     - text: "Home"
       href: index.html
@@ -11,4 +12,6 @@ navbar:
       href: albums.html
     - text: "Songs"
       href: songs.html
+    - text: "Superlatives"
+      href: superlatives.html
       

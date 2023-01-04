@@ -1,10 +1,13 @@
 ---
-title: "Tay's 20201 Music Selections"
+title: "Tay's 2022 Music Selections"
 ---
 
-Hi! __I'm Taylor__ and I like to listen to music and talk about it with my friends. I collected the top 25 albums I listened to and the top 50 songs I liked, and ordered them into descending lists. You can read about all the albums [here](albums.html) and the songs [here](songs.html).  
+This year proved more than ever that I'm Taylor, and listening to new music will make you cool and popular. I detail the best 25 albums and 50 songs I listened to this year, in ranked order. You can enjoy them both here:  
+[Albums](albums.html)  
+[Songs](songs.html)  
 
-If you'd like to hear the songs in a little playlist, you can check that out here:  
-https://open.spotify.com/playlist/2Ti5qRmZ0XqFVtsON9IvF4?si=CP984PYlRMaLAPn8YGV81g
+And for the first time, I put together some superlatives! You can find those [here](superlatives.html).  
+ 
+Finally, you can find my top songs in this playlist: #TODO  
 
-Thanks for reading and listening! Music is cool!
+Thanks for coming along! Have a splendid 2023, or else.

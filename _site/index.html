@@ -11,9 +11,9 @@
 
 
 
-<title>Tay’s 20201 Music Selections</title>
+<title>Tay’s 2022 Music Selections</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -58,6 +58,8 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="style.css" type="text/css" />
+
 
 
 <style type = "text/css">
@@ -80,6 +82,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -137,11 +142,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -170,8 +179,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -179,16 +188,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -232,12 +234,12 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Tay's 20201 Music Selections</a>
+      <a class="navbar-brand" href="index.html">Tay's 2022 Music Selections</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -249,6 +251,9 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="songs.html">Songs</a>
+</li>
+<li>
+  <a href="superlatives.html">Superlatives</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -262,12 +267,21 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Tay’s 20201 Music Selections</h1>
+<h1 class="title toc-ignore">Tay’s 2022 Music Selections</h1>
 
 </div>
 
 
-<p>Hi! <strong>I’m Taylor</strong> and I like to listen to music and talk about it with my friends. I collected the top 25 albums I listened to and the top 50 songs I liked, and ordered them into descending lists. You can read about all the albums <a href="albums.html">here</a> and the songs <a href="songs.html">here</a>.</p>
+<p>This year proved more than ever that I’m Taylor, and listening to new
+music will make you cool and popular. I detail the best 25 albums and 50
+songs I listened to this year, in ranked order. You can enjoy them both
+here:<br />
+<a href="albums.html">Albums</a><br />
+<a href="songs.html">Songs</a></p>
+<p>And for the first time, I put together some superlatives! You can
+find those <a href="superlatives.html">here</a>.</p>
+<p>Finally, you can find my top songs in this playlist: #TODO</p>
+<p>Thanks for coming along! Have a splendid 2023, or else.</p>
 
 
 
