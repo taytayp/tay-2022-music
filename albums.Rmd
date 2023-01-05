@@ -4,7 +4,7 @@ title: "Tay's top 25 albums of 2022"
 
 Below I detail my favorite albums of this year in descending order.
 
-There is also an accompanying [songs](songs.html) list too.
+There is also an accompanying [songs](songs.html) list too, as well as a list for [superlatives](superlatives.html).
 
 ```{r list, echo=FALSE, message=FALSE}
 library(kableExtra)
