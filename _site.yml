@@ -2,7 +2,8 @@ name: "Tay's 2022 Music Selections"
 output:
   html_document:
     #css: "style.css"
-    css: "http://code.divshot.com/geo-bootstrap/swatch/bootstrap.css"
+    css: "bootstrap.css"
+    #css: "http://code.divshot.com/geo-bootstrap/swatch/bootstrap.css"
 navbar:
   title: "Tay's 2022 Music Selections"
   left:
