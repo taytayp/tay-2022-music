@@ -1,92 +1,91 @@
 ---
-title: "Tay's top 50 songs of 2021"
+title: "Tay's top 50 songs of 2022"
 ---
 
-Don't forget to check out my top albums list! [albumngs](albums.html)
+Don't forget to check out my top albums list! [albumngs](albums.html)  
+  
+And superlatives! [slurperatives](superlatives.html)
 
 ```{r list, echo=FALSE, message=FALSE}
 library(kableExtra)
 songs <- read.csv("song_list.csv")
 num_songs <- 50:11
 lower_songs <- songs[num_songs,]
-
 row.names(lower_songs) <- paste0("**", num_songs, "**")
-lower_songs$image <- paste0('![](img/song/', lower_songs$Filename, ')')
+#lower_songs$image <- paste0('![](img/song/', lower_songs$Filename, ')')
+#lower_albums$image <- paste0('![](img/', lower_albums$File.Name, ')')
+lower_songs$image <- paste0('<img src=img/sng/', lower_songs$File.Name, ' width="260"/>')
 lower_songs <- lower_songs[,c(1, 2, 4)]
 colnames(lower_songs) <- c("Album Title", "Artist", NULL)
-knitr::kable(lower_songs, col.names = c("Song Title", "Artist", "")) %>%
+knitr::kable(lower_songs, col.names = c("Song Title", "Artist", ""), format = "html", escape = F) %>%
   kable_styling(font_size = 20, position = "left", full_width = TRUE)
 ```
 ---
-Let's talk about the top 10 songs in greater detail!
+Top 10 means 9 sentences about songs I like and 2 sentences about a song I _really_ like.
 ---
 
-## 10. grandee, blackwinterwells - stranded
+## 10. Alvvays - "Belinda Says" 
 <center>
-![](img/song/stranded.webp)
+<img src=img/sng/belinda.jpeg width="55%"/>
 </center>  
-If I had less humility I would put this song at number one. It is one of my favorite things to sit around and listen to this song and visualize the strangest things. The song's energy and glitchy beat just feels like the most powerful music, it fills me with joy and strength. Hyperpop is so good. 
+Alluding to the great Belinda Carlisle, "Belinda Says" worries about finally finding what you're looking for. The song flickers between quiet verses and an absolutely shredding, distorted choruses. Lost in paradise but still working to figure out what that means.
   
-## 9. The War On Drugs - I Don't Live Here Anymore
+## 9. Steve Lacy - "Bad Habit"
 <center>
-![](img/song/livehere.webp)
+<img src=img/sng/badhabit.jpg width="55%"/>
 </center>  
-For the longest time I thought The War on Drugs was just dadcore dressed up for the 21st century that I simply enjoyed listening to anyways (it is okay I think dadcore is pretty fun). Songs like this show that I was wrong and I'm not mad! Lucius on the bridge really brings this song up to an 11, more an anthem than any The War On Drugs song I've heard before.  
+Propelling to number 1 and sitting there, this song marks some awesome crossover success for Steve Lacy and represents a totally fun, groovy track. Crooning vocals express a missed opportunity turning into something more, affection finally being realized and actualized. A love song come full circle.
   
-## 8. Big Thief - Little Things
+## 8. MUNA - "Solid"
 <center>
-![](img/song/little.webp)
+<img src=img/sng/solid.jpg width="55%"/>
 </center>  
-This song feels like a sea change for Big Thief. Notorious for winding deep, intricate folk songs, "Little Things" brings in a stochastic, busy guitar track that feels to perfectly replicate the busy life of a big city Adrianne worries about. Such a complicated track is a welcome departure for me, and I hope an indicator of their new double LP.  
+We all have solid babes in our lives. This song goes out to them.
   
-## 7. Low - Days Like These
+## 7. Soul Glo - "Gold Chain Punk (whogonbeatmyass?)"
 <center>
-![](img/song/days.webp)
+<img src=img/sng/whogon.jpg width="55%"/>
 </center>  
-I'm certainly familiar with the disrupted "duet" Low is fond of, but few of their songs take a sharp turn into the discordant, disrupted but still sonorous vocals. The song is a highlight on an already great album, and features the perfect level of experimentation.
+I go over this song in more detail in my album review, so let me leave you with a life hack: if you are feeling down about things just say to yourself "who gon beat my ass?"
 
-
-## 6. Parannoul - Beautiful World
+## 6. And So I Watch You From Afar - "VIII Jettison"
 <center>
-![](img/song/beautiful.webp)
+<img src=img/sng/jettison.jpg width="55%"/>
 </center>  
-It can be challenging to choose songs from albums you love and _not_ select the very first song. Front-loaded bias. It's the first song you hear! No wonder you love it, it announces the start of an experience you love. However! "Beautiful World" is a wonderful lead-in to an album that feels so fresh and new I think it serves as a worthy beacon and great song on its own.
+The climax of _Jettison_'s 39 minute story, the eponymous song winds its own wistful tale as it returns and touches on all of the previous points of the album. 
 
-## 5. Animal Collective - Prester John
+## 5. Anxious - "Growing Up Song"
 <center>
-![](img/song/prester.webp)
+<img src=img/sng/anxious.jpg width="55%"/>
 </center>  
-Haunting, industrial sound effects. A building beat. Percussion that swirls into a melody. The droning of vocals. "Prester John" sees all members of Animal Collective contributing to the vocals, and it feels like a real united effort to bring this song together. 
-
-## 4. Deafheaven - Great Mass of Color
-<center>
-![](img/song/great.webp)
-</center>  
-Maybe one of the most palatable Deafheaven songs to ever come out, "Great Mass of Color" showcases the new Deafheaven in perfect form. Bright guitars reflected by dour but pretty vocals. The beauty crescendos into a finisher of pure noise and violence, resolving the song like a knockout finishing a title fight.
-
-## 3. Cassandra Jenkins - Hard Drive
-<center>
-![](img/song/drive.webp)
-</center>  
-Sometimes a hard drive is all you need to work things out. Cassandra Jenkins crafts a beautiful song, with quiet brass and twinkling guitars, overlaid with casual spoken word and singing segments that don't mind where they settle. Breaking into song seems to come at the right moments in the song, the reflections, looking back, being on the road rather than trying to get anywhere. "Take a deep breath / count with me."  
+One of the few graces of getting older is the pain you went through will start to fade away. Sometimes apathy is the only balm left for us who have been through so much. Sometimes, that can turn into forgiveness. I think that's what this song is about.
   
-## 2. The World Is A Beautiful Place & I Am No Longer Afraid To Die - Infinite Josh
+## 4. Beach House - "Sunset"
 <center>
-![](img/song/josh.webp)
+<img src=img/sng/sunse.jpg width="55%"/>
 </center>  
-TWIABP goes to great lengths to build their songs. No stranger to longer pieces, their albums often feature songs that stretch into 10 and 15 minute ranges. "Infinite Josh" borrows from the strategy of the album itself. Namely, alluding to older TWIABP works in both composition and lyrics. These ideas of home, fear, and death have been baked into the band's works, and this song is where they come together conceptually and musically to create a climax for the entire album. 
+This song is really pretty and also really fun to play on guitar.
 
-## 1. Fiddlehead - Grief Motif
+## 3. Their / They're / There - "A Symphony of Sparrows"
 <center>
-![](img/song/grief.webp)
+<img src=img/sng/symphony.png width="55%"/>
 </center>  
-This song is actually less than ninety seconds long, but I feel in my heart that music should be judged on the feelings it inspires. Obviously, the strength of this song is that it is the prelude to a great album and that expectation bolsters the feeling this song delivers. But on its own merits, "Grief Motif" is a quick banger that delivers a lot of fun and a lot of feeling.
+Their / They're / There combines the lyricism of Into it. Over it. with some absolutely nasty, noodley guitar riffing. The bridge on this song leaves me speechless.
+
+## 2. Let's Eat Grandma - "Levitation"
+<center>
+<img src=img/sng/levitation.jpg width="55%"/>
+</center>  
+I might be suffering from a little recency bias, since I started listening to this song a lot more in December, but I think its pop and synth instrumentation bring such a fun direction to the song. 
+
+## 1. Black Country, New Road - "Basketball Shoes"
+<center>
+<img src=img/sng/basketball.png width="55%"/>
+</center>  
+"Basketball Shoes" is like 13 minutes long, has like 8 different movements, a bunch of brass, and Isaac Wood's wailing vocals to tie it together. This song really cinches the ending of _Ants From Up There_, and it is a great little sample of the whole album itself. But like most things, you shouldn't just jump to the end. Try to enjoy all of _Ants From Up There_, there aren't many albums like it.
 
 ---
-If you haven't already, please peep my [albums list](albums.html). Would you believe many of the songs here are on _those_ albums? I couldn't either! 
+If you haven't already, please pay the toll for visiting my website.
 
-Here is a beautiful playlist of these songs in their appropriate, descending order. If you listen I will give you a lil kiss maybe.  
-https://open.spotify.com/playlist/2Ti5qRmZ0XqFVtsON9IvF4?si=CP984PYlRMaLAPn8YGV81g  
-
-Finally, here is the whole list in big image format! I bet it would look nice as your phone background?  
-![](img/song_grid_edited.png)
+You can check out the albums and superlatives above. Here is a playlist of these songs in order, no shuffling:  
+[https://open.spotify.com/playlist/6IX7K4Niqy6OnLEfNKIOZL?si=ng-iCj2NQ9mtFLrF3fzdaw](https://open.spotify.com/playlist/6IX7K4Niqy6OnLEfNKIOZL?si=ng-iCj2NQ9mtFLrF3fzdaw)
