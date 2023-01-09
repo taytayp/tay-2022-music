@@ -5,3 +5,19 @@ title: "Tay's Superlatives for 2022"
 For the first time this year, I have put together some superlatives for some of the music this year. I don't think we'll see any of the common high school superlatives like "most kissable" or "most numerous pipe bombs brought to school", but who knows! All of contestants were songs and albums that came out in 2022 only.
 
 Don't forget there are [song](songs.html) and [album](albums.html) lists too.
+
+```{r list, echo=FALSE, message=FALSE}
+library(kableExtra)
+supertable <- data.frame(artist = c("LEN", "Katy Kirby", "DIIV", "SZA", "JELEEL!"),
+                         award = c("Song of the Summer", "Getting stuck in my head while reading food label text to check for gluten because I have celiac disease", "Best Cover", "SZA Why", "Best Thing I Saw Online:"),
+                         content = c("Steal My Sunshine", "Cool Dry Place", "When You Sleep", "SOS", ""),
+                         File.Name = c("len.jpeg", "katy.jpg", "diiv.jpg", "sza.jpg", ""))
+
+supertable$File.Name <- paste0('<img src=img/sup/', supertable$File.Name, ' width="440"/>')
+supertable[5,4] <- ""
+colnames(supertable) <- c("Artist", "Award", NULL, NULL)
+knitr::kable(supertable, col.names = c("Artist", "Award", "", ""), format = "html", escape = F) %>%
+  kable_styling(font_size = 20, position = "left", full_width = TRUE)
+```
+
+<center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">BLACK JEFF HARDY! <a href="https://t.co/jIr673ck6V">pic.twitter.com/jIr673ck6V</a></p>&mdash; JELEEL! 🕷 (@jeleeeel) <a href="https://twitter.com/jeleeeel/status/1566225467299995649?ref_src=twsrc%5Etfw">September 4, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
